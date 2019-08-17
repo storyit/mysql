@@ -1,0 +1,3 @@
+# delete any backups older than 30 days
+
+0 4 1 * * find /var/mysql_backups -mtime +30 -type f -delete
